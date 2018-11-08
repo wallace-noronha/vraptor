@@ -1,13 +1,9 @@
-# VRaptor blank project
+# VRaptor project
 
-This is a blank project to help you to use VRaptor. You can easily import in you IDE as Maven project.
+This is a VRaptor project. Maven project.
 
-Este é um projeto em branco para ajudar você a usar o VRaptor. Você pode facilmente importá-lo na sua IDE favorita como um projeto Maven.
+Este é um projeto VRaptor. projeto Maven.
 
-Após criar seu projeto você pode rodá-lo com um tomcat7 ou +:
-
-```
-mvn tomcat7:run
-```
+Projeto para fins acadêmicos.
 
 Cuidado para *jamais* executar `mvn tomcat:run` pois ele usará um tomcat6 (incompatível).
