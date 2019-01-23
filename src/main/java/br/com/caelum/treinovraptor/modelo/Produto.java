@@ -3,6 +3,10 @@ package br.com.caelum.treinovraptor.modelo;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.Length;
 
 @Entity
 public class Produto {
@@ -10,8 +14,17 @@ public class Produto {
 	@Id
 	@GeneratedValue
 	private Long id;
+	
+	@NotNull
+	@Length(min=3)
 	private String nome;
+	
+	@NotNull
+	@Length(max=40)
 	private String descricao;
+	
+	@NotNull
+	@Min(1)
 	private Double preco;
 	
 	//Getters and Setters
